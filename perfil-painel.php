@@ -20,7 +20,8 @@
                 $result = mysqli_query($conexao,$sql);
                 while($perfil = mysqli_fetch_assoc($result)){
                     $nome = $perfil['nome'];
-                    $profissao = $perfil['profissao'];                
+                    $profissao = $perfil['profissao']; 
+                    $id = $perfil['id'];               
             ?>                    
                         <li class="list-group-item">
                             <div class="row">
@@ -31,9 +32,9 @@
                                     <?php echo $profissao ?>
                                 </div>
                                 <div class="col-4 d-flex justify-content-end">      
-                                    <a href="perfil-visualizar.php" class="btn btn-primary me-1">Visualizar</a>                        
-                                    <a href="perfil-alterar.php" class="btn btn-primary me-1">Alterar</a>                              
-                                    <a href="perfil-excluir.php" class="btn btn-primary me-1">Excluir</a>                                     
+                                    <a href='perfil-visualizar.php?id=<?php echo $id ?>' class="btn btn-primary me-1">Visualizar</a>                        
+                                    <a href='perfil-alterar.php?id=<?php echo $id ?>' class="btn btn-primary me-1">Alterar</a>                              
+                                    <a href='perfil-excluir.php?id=<?php echo $id ?>' class="btn btn-primary me-1">Excluir</a>                                     
                                 </div>
                             </div>
                         </li>                    
