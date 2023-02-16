@@ -16,7 +16,7 @@
             $_SESSION["usuario"]=$perfil['email'];
             $_SESSION["senha"]=$perfil['senha'];
         }
-        header("location: painel.php");
+        header("location: perfil-painel.php");
     }else{
         unset ($_SESSION['usuario']);
         unset ($_SESSION['senha']);
