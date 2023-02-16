@@ -13,6 +13,7 @@
         .fundo {
             background-color: #FFE53B;
             background-image: linear-gradient(to right, blue , green);
+            resize:both; overflow:auto; width:100%;
         }
 
         .fundo-cinza{

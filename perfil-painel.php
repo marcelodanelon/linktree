@@ -5,7 +5,7 @@
 <div class="col col-xl-10">
     <div class="card">
         <div class="card-body p-5">
-            <h1>Conseguiu acessar!</h1>
+            <h1>Painel Inicial</h1>
             <div class="row">
                 <div class="col-6 d-flex justify-content-start">
                     <a href="perfil-novo.php">Adicionar novo Perfil</a>
@@ -25,10 +25,10 @@
             ?>                    
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-4 pt-1">
                                     <?php echo $nome ?>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-4 pt-1">
                                     <?php echo $profissao ?>
                                 </div>
                                 <div class="col-4 d-flex justify-content-end">      

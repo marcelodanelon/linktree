@@ -1,7 +1,7 @@
 <?php
     include "header.php";
 ?>
-    <div class="col col-xl-10">
+    <div class="col col-xl-10 pb-5">
         <div class="card">
             <div class="card-body p-5">
                 <h3>Perfil Novo</h3>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <button type="submit" class="btn btn-success mt-3">Gravar</button>
-                    <a href="painel.php" class="btn btn-primary mt-3">Voltar</a>
+                    <a href="perfil-painel.php" class="btn btn-primary mt-3">Voltar</a>
                 </form>
 <?php
     include "footer.php";
