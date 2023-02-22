@@ -1,4 +1,5 @@
 <?php
+    include "verifica-login.php";
     include "header.php";
 ?>
     <div class="col col-xl-10 pb-5">
