@@ -31,19 +31,21 @@
                             <input type="hidden" value="<?php echo $id ?>" name="id" class="form-control">
                             Nome
                             <input type="text" value="<?php echo $nome ?>" name="nome" class="form-control">
-                        </div>                                            
+                        </div>     
+                        <div class="col-6">
+                            Foto
+                            <input type="file" name="arquivo" class="form-control">
+                        </div>                                         
                     </div>
                     <div class="row mt-3">
                         <div class="col-6">
                             Email
                             <input type="email" value="<?php echo $email ?>" name="email" class="form-control">
-                        </div>                                            
-                    </div>
-                    <div class="row mt-3">
+                        </div>  
                         <div class="col-6">
                             Profissão
                             <input type="text" value="<?php echo $profissao ?>" name="profissao" class="form-control">
-                        </div>                      
+                        </div>                                            
                     </div>
                     <div class="row mt-3">
                         <div class="col-12">

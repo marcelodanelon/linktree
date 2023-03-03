@@ -6,24 +6,26 @@
         <div class="card">
             <div class="card-body p-5">
                 <h3>Perfil Novo</h3>
-                <form action="perfil-salvar.php" method="post">
+                <form action="perfil-salvar.php" method="post" enctype="multipart/form-data">
                     <div class="row mt-3">
                         <div class="col-6">
                             Nome
                             <input type="text" name="nome" class="form-control">
-                        </div>                                            
+                        </div> 
+                        <div class="col-6">
+                            Foto
+                            <input type="file" name="arquivo" class="form-control">
+                        </div>                                           
                     </div>
                     <div class="row mt-3">
                         <div class="col-6">
                             Email
                             <input type="email" name="email" class="form-control">
-                        </div>                                            
-                    </div>
-                    <div class="row mt-3">
+                        </div>       
                         <div class="col-6">
                             Profissão
                             <input type="text" name="profissao" class="form-control">
-                        </div>                      
+                        </div>                                     
                     </div>
                     <div class="row mt-3">
                         <div class="col-12">
