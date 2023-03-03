@@ -2,6 +2,9 @@
     include "verifica-login.php";
     include "header.php";
 ?>
+<div class="menu container-fluid">
+    <?php include_once "menu.php"; ?>
+</div>
 <div class="col col-xl-10">
     <div class="card">
         <div class="card-body p-5">
