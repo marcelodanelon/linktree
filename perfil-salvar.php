@@ -12,7 +12,7 @@
     $linkedin = $_POST['linkedin'];
     $youtube = $_POST['youtube'];
     $senha = $_POST['senha'];
-    $foto = $_FILES["arquivo"];
+    $fundo = $_POST['fundo'];
 
     ## criar nome e local imagem
     $pasta = 'upload/img/';
@@ -21,7 +21,7 @@
     ## mover imagem para esse local
     move_uploaded_file($_FILES['arquivo']['tmp_name'],$pasta . $nomeNovo);
     
-    $sql = "insert into t_perfis(nome,email,profissao,descricao,instagram,facebook,linkedin,youtube,senha) values('$nome','$email','$profissao','$descricao','$instagram','$facebook','$linkedin','$youtube','$senha')";
+    $sql = "insert into t_perfis(nome,email,profissao,descricao,instagram,facebook,linkedin,youtube,senha,foto,fundo) values('$nome','$email','$profissao','$descricao','$instagram','$facebook','$linkedin','$youtube','$senha','$nomeNovo','$fundo')";
 
     mysqli_query($conexao,$sql);
 
