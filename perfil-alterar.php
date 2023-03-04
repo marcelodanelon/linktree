@@ -43,7 +43,7 @@
                         </div>     
                         <div class="col-6">
                             Foto
-                            <input type="file" name="arquivo" class="form-control">
+                            <input value="<?php $foto ?>" type="file" name="arquivo" class="form-control">
                         </div>                                         
                     </div>
                     <div class="row mt-3">
