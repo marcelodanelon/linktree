@@ -13,6 +13,7 @@
     $youtube = $_POST['youtube'];
     $senha = $_POST['senha'];
     $fundo = $_POST['fundo'];
+    $senha = md5($senha);
 
     ## criar nome e local imagem
     $pasta = 'upload/img/';

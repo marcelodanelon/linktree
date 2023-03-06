@@ -28,7 +28,7 @@
                 ?>
                 <div class="row align-items-center">
                     <div class="col-2">
-                        <img src="<?php echo "upload/img/".$foto; ?>" width=100px height=auto>                        
+                        <img class="circle" src="<?php echo "upload/img/".$foto; ?>" width=100px height=auto>                        
                     </div>
                     <div class="col-6">
                         <h3>Alterar Perfil</h3>

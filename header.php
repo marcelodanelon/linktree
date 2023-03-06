@@ -29,6 +29,24 @@
             margin-bottom: 1rem;
             max-width: 9rem;
         }     
+        .circle {
+            background-color: #aaa;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            object-fit: cover;
+        }
+        .circlePainel {
+            background-color: #aaa;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            object-fit: cover;
+        }
     </style>
 </head>
     <body>

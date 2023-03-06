@@ -1,6 +1,7 @@
 <?php
     $email = $_POST['usuario'];
     $senha = $_POST['senha'];
+    $senha = md5($senha);
 
     include "conexao.php";
 
@@ -13,6 +14,7 @@
     if(mysqli_num_rows($result)> 0){
         while($perfil = mysqli_fetch_assoc($result)){
             session_start();
+            $_SESSION["foto"]=$perfil['foto'];
             $_SESSION["usuario"]=$perfil['email'];
             $_SESSION["senha"]=$perfil['senha'];
         }

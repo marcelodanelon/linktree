@@ -14,6 +14,7 @@
     $youtube = $_POST['youtube'];
     $senha = $_POST['senha'];
     $fundo = $_POST['fundo'];
+    $senha = md5($senha);
 
     if($nomeDoArquivo==''){
         $sql = "update t_perfis set nome='$nome', email='$email', profissao='$profissao', descricao='$descricao', instagram='$instagram', linkedin='$linkedin',facebook='$facebook',youtube='$youtube',senha='$senha', fundo='$fundo' where id=$id";
