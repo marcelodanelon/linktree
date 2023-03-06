@@ -15,15 +15,18 @@
     $senha = $_POST['senha'];
     $fundo = $_POST['fundo'];
 
-    ## criar nome e local imagem
-    $pasta = 'upload/img/';
-    $partes = explode(".",$nomeDoArquivo);
-    $nomeNovo =  round(microtime(true)) . ".". end($partes);
-    ## mover imagem para esse local
-    move_uploaded_file($_FILES['arquivo']['tmp_name'],$pasta . $nomeNovo);
+    if($nomeDoArquivo==''){
+        $sql = "update t_perfis set nome='$nome', email='$email', profissao='$profissao', descricao='$descricao', instagram='$instagram', linkedin='$linkedin',facebook='$facebook',youtube='$youtube',senha='$senha', fundo='$fundo' where id=$id";
+    }else{
+        ## criar nome e local imagem
+        $pasta = 'upload/img/';
+        $partes = explode(".",$nomeDoArquivo);
+        $nomeNovo =  round(microtime(true)) . ".". end($partes);
+        ## mover imagem para esse local
+        move_uploaded_file($_FILES['arquivo']['tmp_name'],$pasta . $nomeNovo);
 
-    $sql = "update t_perfis set nome='$nome', email='$email', profissao='$profissao', descricao='$descricao', instagram='$instagram', linkedin='$linkedin',facebook='$facebook',youtube='$youtube',senha='$senha', foto='$nomeNovo', fundo='$fundo' where id=$id";
-
+        $sql = "update t_perfis set nome='$nome', email='$email', profissao='$profissao', descricao='$descricao', instagram='$instagram', linkedin='$linkedin',facebook='$facebook',youtube='$youtube',senha='$senha', foto='$nomeNovo', fundo='$fundo' where id=$id";
+    }
     mysqli_query($conexao,$sql);
 
     mysqli_close($conexao);
