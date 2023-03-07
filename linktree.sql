@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 04-Mar-2023 às 02:05
+-- Tempo de geração: 07-Mar-2023 às 02:15
 -- Versão do servidor: 10.4.25-MariaDB
 -- versão do PHP: 8.1.10
 
@@ -37,7 +37,7 @@ CREATE TABLE `t_perfis` (
   `facebook` varchar(100) NOT NULL,
   `linkedin` varchar(100) NOT NULL,
   `youtube` varchar(100) NOT NULL,
-  `senha` varchar(11) NOT NULL,
+  `senha` varchar(100) NOT NULL,
   `foto` varchar(100) NOT NULL,
   `fundo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -47,9 +47,9 @@ CREATE TABLE `t_perfis` (
 --
 
 INSERT INTO `t_perfis` (`id`, `nome`, `email`, `profissao`, `descricao`, `instagram`, `facebook`, `linkedin`, `youtube`, `senha`, `foto`, `fundo`) VALUES
-(1, 'Marcelo Danelon', 'marcelo@gmail.com', 'Programador', 'teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste ', 'https://www.instagram.com/', 'https://www.facebook.com/', 'https://www.linkedin.com/', 'https://www.youtube.com/', '1234', '1677891886.', 'fundos/fundo2.png'),
-(33, 'dsad', 'teste@email.com', 'dsadsa', '', '', '', '', '', '', '1677891227.', ''),
-(34, 'TESTE', 'teste@email.com', 'TESTE', '', '', '', '', '', '', '1677891673.', 'fundos/fundo1.png');
+(1, 'Marcelo Danelon', 'marcelo@gmail.com', 'Programador', 'teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste ', 'https://www.instagram.com/', 'https://www.facebook.com/', 'https://www.linkedin.com/', 'https://www.youtube.com/', '81dc9bdb52d04dc20036dbd8313ed055', '1677892100.png', 'fundos/fundo2.png'),
+(34, 'TESTE', 'teste@email.com', 'TESTE', '', '', '', '', '', '81dc9bdb52d04dc20036dbd8313ed055', '1678143182.gif', 'fundos/fundo3.png'),
+(35, 'CARLOS', 'teste@email.com', 'CARREGADOR', '', '', '', '', '', 'ec6a6536ca304edf844d1d248a4f08dc', '1678143210.jpg', 'fundos/fundo3.png');
 
 --
 -- Índices para tabelas despejadas
@@ -69,7 +69,7 @@ ALTER TABLE `t_perfis`
 -- AUTO_INCREMENT de tabela `t_perfis`
 --
 ALTER TABLE `t_perfis`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
